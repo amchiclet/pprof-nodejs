@@ -143,7 +143,7 @@ function computeStats(
           hashes.push(fileStats.hash);
         }
         statistics[filename] = fileStats;
-      } catch (err) {
+      } catch (err: any) {
         errors.set(filename, err);
       }
     }

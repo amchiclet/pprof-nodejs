@@ -156,7 +156,7 @@ describe('HeapProfiler', () => {
       const stackDepth2 = 64;
       try {
         heapProfiler.start(intervalBytes2, stackDepth2);
-      } catch (e) {
+      } catch (e: any) {
         assert.strictEqual(
           e.message,
           'Heap profiler is already started  with intervalBytes 524288 and' +

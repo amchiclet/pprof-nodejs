@@ -10,6 +10,8 @@ Description:
 Local Modifications:
        All code except scanner.ts has been removed.
 
+       Explicitly use the any type as catch variables to support typescript >= 4.4.0.
+
        Imported as a git-subtree.
 
        $ git remote add -f cloud-debug-nodejs https://github.com/googleapis/cloud-debug-nodejs.git
